@@ -10,11 +10,11 @@ import java.util.logging.Level;
 
 public class CLWindows extends CommandLine {
 
-    private String hl2 = "hl2.exe";
+    private String hl2 = "tf_win64.exe";
 
     @Override
     public ProcessBuilder getBuilderStartTF2(String gamePath) {
-        Path path = Paths.get(gamePath, "..", "hl2.exe");
+        Path path = Paths.get(gamePath, "..", "tf_win64.exe");
         try {
             path = path.toRealPath();
         } catch (IOException e) {
@@ -31,7 +31,7 @@ public class CLWindows extends CommandLine {
 
     @Override
     public ProcessBuilder getBuilderStartHLAE(String hlaePath, String gamePath) {
-        Path hl2Path = Paths.get(gamePath).resolve(".." + File.separator + "hl2.exe");
+        Path hl2Path = Paths.get(gamePath).resolve(".." + File.separator + "tf_win64.exe");
         try {
             hl2Path = hl2Path.toRealPath();
         } catch (IOException e) {
