@@ -1,2 +1,0 @@
-release-v4.1=res/getdown-4.1-release.txt
-preview-v4.1=res/getdown-4.1-preview.txt

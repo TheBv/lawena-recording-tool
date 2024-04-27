@@ -9,12 +9,12 @@ import java.util.logging.Level;
 
 public class CLLinux extends CommandLine {
 
-    private String hl2 = "hl2.sh";
+    private String hl2 = "tf.sh";
 
 
     @Override
     public ProcessBuilder getBuilderStartTF2(String gamePath) {
-        Path path = Paths.get(gamePath, "..", "hl2.sh");
+        Path path = Paths.get(gamePath, "..", "tf.sh");
         try {
             Path run = Paths.get(this.getSteamPath().toString(),
                 "ubuntu12_32", "steam-runtime", "run.sh");
